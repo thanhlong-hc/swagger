@@ -123,4 +123,4 @@ definitions:
     properties:
       replace-me:
         type: object
-        description: 'Replace with request payload in application/json, application/x-www-form-urlencoded, or application/xml format.'
+        description: 'Replace with request payload application/json, application/x-www-form-urlencoded, or application/xml format.'
