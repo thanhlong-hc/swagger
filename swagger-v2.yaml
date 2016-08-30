@@ -1,0 +1,186 @@
+---
+swagger: "2.0"
+info:
+  version: "0.0.1"
+  title: "webapi"
+host: "etoyota.net"
+basePath: "/webapi"
+schemes:
+- "https"
+paths:
+  /:
+    get:
+      produces:
+      - "application/json"
+      responses:
+        200:
+          description: "200 response"
+  /car:
+    get:
+      produces:
+      - "application/json"
+      parameters:
+      - name: "charset"
+        in: "query"
+        description: "文字コード"
+        type: "string"
+        required: false
+      - name: "data_type"
+        in: "query"
+        description: "出力種別"
+        type: "string"
+        required: false
+      - name: "method"
+        in: "query"
+        description: "処理モード"
+        type: "string"
+        required: false
+      - name: "pid"
+        in: "query"
+        description: "パーツID"
+        type: "string"
+        required: false
+      - name: "oid"
+        in: "query"
+        description: "オーナーID"
+        type: "string"
+        required: false
+      - name: "size"
+        in: "query"
+        description: "件数"
+        type: "string"
+        required: false
+      - name: "level"
+        in: "query"
+        description: "取得精度"
+        type: "string"
+        required: false
+      - name: "param"
+        in: "query"
+        description: "取得先"
+        type: "string"
+        required: false
+      - name: "series_code"
+        in: "query"
+        description: "車種シリーズコード"
+        type: "string"
+        required: false
+      - name: "keyward"
+        in: "query"
+        description: "キーワード"
+        type: "string"
+        required: false
+      - name: "callback"
+        in: "query"
+        description: "コールバック関数"
+        type: "string"
+        required: false
+      - name: "relatedid"
+        in: "query"
+        description: "呼出元ID"
+        type: "string"
+        required: false
+      responses:
+        200:
+          description: "200 response"
+  /news_category:
+    get:
+      produces:
+      - "application/json"
+      parameters:
+      - name: "charset"
+        in: "query"
+        description: "文字コード"
+        type: "string"
+        required: false
+      - name: "data_type"
+        in: "query"
+        description: "出力種別"
+        type: "string"
+        required: false
+      - name: "method"
+        in: "query"
+        description: "処理モード"
+        type: "string"
+        required: false
+      - name: "category_code"
+        in: "query"
+        description: "ニュースカテゴリコード"
+        type: "string"
+        required: false
+      - name: "callback"
+        in: "query"
+        description: "コールバック関数"
+        type: "string"
+        required: false
+      responses:
+        200:
+          description: "200 response"
+  /news:
+    get:
+      produces:
+      - "application/json"
+      parameters:
+      - name: "charset"
+        in: "query"
+        description: "文字コード"
+        type: "string"
+        required: false
+      - name: "data_type"
+        in: "query"
+        description: "出力種別"
+        type: "string"
+        required: false
+      - name: "method"
+        in: "query"
+        description: "処理モード"
+        type: "string"
+        required: false
+      - name: "pid"
+        in: "query"
+        description: "パーツID"
+        type: "string"
+        required: false
+      - name: "oid"
+        in: "query"
+        description: "オーナーID"
+        type: "string"
+        required: false
+      - name: "size"
+        in: "query"
+        description: "件数"
+        type: "string"
+        required: false
+      - name: "category_code"
+        in: "query"
+        description: "ニュースカテゴリコード"
+        type: "string"
+        required: false
+      - name: "sub_category_code"
+        in: "query"
+        description: "ニュースサブカテゴリコード"
+        type: "string"
+        required: false
+      - name: "period"
+        in: "query"
+        description: "ランキングの集計期間"
+        type: "string"
+        required: false
+      - name: "keyward"
+        in: "query"
+        description: "関連ニュースを探す元となるキーワード"
+        type: "string"
+        required: false
+      - name: "callback"
+        in: "query"
+        description: "コールバック関数"
+        type: "string"
+        required: false
+      - name: "relatedid"
+        in: "query"
+        description: "呼出元ID"
+        type: "string"
+        required: false
+      responses:
+        200:
+          description: "200 response"
